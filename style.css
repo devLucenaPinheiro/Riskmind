@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+header{
+    padding: 20px 0px 0px 87px;
+}
+
+span{
+    font-weight: 300;
+}
+
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
+
+}
+
+.pbold{
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    gap: 30px;
+    height: 350px;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: -1.5%;
+}
+
+.container-2{
+    display: flex;
+    background-color: purple;
+    gap: 15px;
+    height: 700px;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-3{
+    display: flex;
+    background-color: yellow;
+    gap: 20px;
+    height: 200px;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item{
+    height: 270px;
+    width: 360px;
+    background: white;
+    padding: 15px;
+}
+
+.item-2{
+    height: 270px;
+    width: 360px;
+    background: white;
+    padding: 15px;
+}
+
+.item-3{
+    height: 100px;
+    width: 360px;
+    background: white;
+    padding: 15px;
+}
+
+#hands{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
+}
