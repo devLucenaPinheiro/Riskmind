@@ -4,6 +4,8 @@ body{
     font-size: 14px;
 }
 
+
+
 header{
     padding: 20px 0px 0px 87px;
 }
@@ -21,14 +23,13 @@ span{
 }
 
 .pbold{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .container{
     display: flex;
-    background-color: white;
     gap: 30px;
-    height: 350px;
+    height: 290px;
     flex-flow: wrap;
     justify-content: center;
     margin-top: -1.5%;
@@ -36,17 +37,15 @@ span{
 
 .container-2{
     display: flex;
-    background-color: purple;
     gap: 15px;
-    height: 700px;
+    height: 640px;
     flex-flow: column wrap;
     align-items: center;
+    margin-top: 50px;
 }
 
 .container-3{
     display: flex;
-    background-color: yellow;
-    gap: 20px;
     height: 200px;
     flex-flow: column wrap;
     align-items: center;
@@ -61,14 +60,14 @@ span{
 
 .item-2{
     height: 270px;
-    width: 360px;
+    width: 390px;
     background: white;
     padding: 15px;
 }
 
 .item-3{
-    height: 100px;
-    width: 360px;
+    height: 130px;
+    width: 670px;
     background: white;
     padding: 15px;
 }
@@ -78,4 +77,42 @@ span{
     margin-left: auto;
     margin-right: auto;
     width: 91%;
+}
+
+
+.equipe{
+    padding: 15px;
+    margin: 0px 0px 0px 57px;
+}
+
+.clientes{
+    padding: 15px;
+    margin: 0px 0px 0px 90px;
+    font-size: 16px;
+}
+
+#machine{
+    margin-top: 35px;
+}
+
+.carrosel {
+    display: block;
+    margin-left: 15%;
+    padding: 15px;
+}
+
+.footer-div{
+    background-color: #168ae4;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+}
+
+.contato{
+    background-color: #7fb9e6;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
 }
