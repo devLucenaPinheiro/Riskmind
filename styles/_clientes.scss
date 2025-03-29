@@ -1,8 +1,12 @@
 
 .clientes-texto {
-    text-align: center;
-    padding: 40px;
-}
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 0px;
+  }
 
 h2 {
     color: #3776c2;
@@ -18,14 +22,4 @@ h2 {
     justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
-}
-.logo-placeholder {
-    width: 150px;
-    height: 60px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #555;
 }

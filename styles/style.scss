@@ -3,6 +3,7 @@
 @import './form';
 @import './footer';
 @import './clientes';
+@import './about';
 
 body{
     margin: 0px;
@@ -36,78 +37,6 @@ span{
     height: 200px;
     flex-flow: column wrap;
     align-items: center;
-}
-.about {
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.title {
-    color: #168ae4;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: start;
-}
-
-.description {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.highlight {
-    color: #168ae4;
-    font-weight: bold;
-}
-
-.highlight-yellow {
-    color: #f5b700;
-    font-weight: bold;
-}
-
-.cards-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-top: 30px;
-    gap: 15px;
-}
-
-.card {
-    width: 30%;
-    background: white;
-    padding: 20px;
-    border: 2px solid #168ae4;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.card li {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-    position: relative;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.card li::before {
-    content: "➤";
-    color: #f5b700;
-    position: absolute;
-    left: 0;
 }
 
 .item-2{
