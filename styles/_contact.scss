@@ -1,0 +1,32 @@
+.contact-section {
+    display: flex;
+    width: 91%;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.contact-info, .contact-form {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-info {
+    background-color: white;
+    color: #002147;
+    font-size: 16px;
+}
+
+.contact-info h2 {
+    color: #002147;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #168ae4;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
