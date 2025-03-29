@@ -5,6 +5,10 @@
 @import './clientes';
 @import './about';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
     font-family: 'Inter', sans-serif;
