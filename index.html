@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <img src="assets/logo.jpg" alt="Logo riskmind" id="logo">
         <nav>
@@ -23,12 +24,20 @@
         </nav>
     </header>
     <main>
-        <img src="assets/banner.png" alt="Aprenda com dados" id="banner">
-        <div class="container-3">
-            <div class="item-3"><hr><h1><span style="color: #168ae4;">Analisys</span> <span>Services</span></h1><p class="pbold">Big data ou Small data, nós usamos os dados para resolver problemas importantes.</p></div>
-            <div class="item-3"><p id="machine">	
-                De machine learning aos métodos Monte Carlo, do processamento da linguagem natural à análise de séries temporais, temos experiência com uma ampla gama de capacidades analíticas. Se envolver dados, há uma boa chance de termos feito uma análise equivalente à sua antes.</p><br><br><hr></div>
-        </div>
+        <section class="banner">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="assets/banner.png" alt="Aprenda com dados">
+                    <img id="slide-2" src="assets/porquinho.jpg">
+                    <img id="slide-3" src="assets/financia.jpg">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
         <div class="contact-section" id="faleconosco">
             <div class="contact-info">
                 <h2>Como podemos ajudar a sua empresa?</h2>
@@ -88,7 +97,11 @@
                 </div>
             </div>
         </section>
-
+        <div class="container-3">
+            <div class="item-3"><hr><h1><span style="color: #168ae4;">Analisys</span> <span>Services</span></h1><p class="pbold">Big data ou Small data, nós usamos os dados para resolver problemas importantes.</p></div>
+            <div class="item-3"><p id="machine">	
+                De machine learning aos métodos Monte Carlo, do processamento da linguagem natural à análise de séries temporais, temos experiência com uma ampla gama de capacidades analíticas. Se envolver dados, há uma boa chance de termos feito uma análise equivalente à sua antes.</p><br><br><hr></div>
+        </div>
         <div class="container-2">
             <div class="item-2"> <img src="assets/shield.png" alt="Simbolo de " width="50" height="60,03"><h1>Seguros</h1><p>Pricing, fraude, start-up, valuation, cálculos atuariais e novos produtos.</p></div>
             <div class="item-2"> <img src="assets/cipher.png" alt="Simbolo de " width="28" height="49,31"><h1>Pricing</h1><p>Estratégico e tático integrando finanças, marketing e vendas com foco do cliente ou do produto.</p></div>
