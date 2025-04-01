@@ -95,11 +95,11 @@ nav a:hover {
 .contact-form textarea {
   width: 100%;
   height: 120px;
-  padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 14px;
   margin-top: 10px;
+  resize: none;
 }
 
 .contact-form button {
@@ -202,14 +202,38 @@ h2 {
   margin-bottom: 20px;
 }
 
-.logos {
+.carrossel-logos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scroll 19.8s linear infinite;
 }
 
+.img-logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+  transition: transform 0.5s ease;
+}
+
+.img-logo:hover img {
+  transform: scale(1.07);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .about {
   width: 90%;
   max-width: 1400px;
@@ -293,7 +317,7 @@ h2 {
 
 .slider-wrapper {
   position: relative;
-  max-width: 48rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -350,6 +374,8 @@ body {
   margin: 0px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 span {

@@ -16,10 +16,35 @@ h2 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.logos {
+
+.carrossel-logos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: max-content;
+    animation: scroll 19.8s linear infinite;
+  }
+  
+  .img-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    transition: transform 0.5s ease;
+  }
+  
+  .img-logo:hover img {
+    transform: scale(1.07);
+  }
+
+  @keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+  }
 }

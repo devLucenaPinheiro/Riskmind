@@ -22,11 +22,11 @@
 .contact-form textarea {
     width: 100%;
     height: 120px;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
     margin-top: 10px;
+    resize: none;
 }
 
 .contact-form button {
