@@ -12,21 +12,23 @@
 }
 
 .contact-info {
-    background-color: white;
-    color: #002147;
+    background-color: $White;
+    color: $PrimaryDarkBlue;
     font-size: 16px;
+    h2 {
+        color: $PrimaryDarkBlue;
+        font-weight: bold;
+    }
+
+    a {
+        color: $PrimaryLightBlue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
-.contact-info h2 {
-    color: #002147;
-    font-weight: bold;
-}
 
-.contact-info a {
-    color: #168ae4;
-    text-decoration: none;
-}
 
-.contact-info a:hover {
-    text-decoration: underline;
-}

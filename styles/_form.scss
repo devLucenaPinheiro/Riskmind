@@ -1,6 +1,6 @@
 .contact-form {
-    background-color: #002147;
-    color: white;
+    background-color: $PrimaryDarkBlue;
+    color: $White;
     border-radius: 15px;
 }
 .contact-form .input-group {
@@ -34,8 +34,8 @@
     padding: 12px;
     margin-top: 15px;
     border: none;
-    background-color: #168ae4;
-    color: white;
+    background-color: $PrimaryLightBlue;
+    color: $White;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;

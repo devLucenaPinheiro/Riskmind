@@ -27,18 +27,20 @@ h2 {
     animation: scroll 19.8s linear infinite;
   }
   
-  .img-logo img {
+  .img-logo {
+    img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 175px;
     height: 175px;
     transition: transform 0.5s ease;
+    }
+    :hover{
+      transform: scale(1.07);
+    }
   }
   
-  .img-logo:hover img {
-    transform: scale(1.07);
-  }
 
   @keyframes scroll {
     from {

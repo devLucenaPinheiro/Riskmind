@@ -1,3 +1,9 @@
+$White: #fff;
+$Black: #000;
+$Yellow: #f5b700;
+$PrimaryLightBlue: #168ae4;
+$PrimaryDarkBlue: #002147;
+
 @import './header-nav';
 @import './contact';
 @import './form';
@@ -5,6 +11,7 @@
 @import './clientes';
 @import './about';
 @import './banner';
+@import './solucoes';
 
 html {
     scroll-behavior: smooth;
@@ -22,36 +29,34 @@ span{
     font-weight: 300;
 }
 
-.container-2{
-    display: flex;
-    gap: 15px;
-    height: 640px;
-    flex-flow: column wrap;
-    align-items: center;
-    margin-top: 50px;
-}
 
-.container-3{
+.container-2{
     display: flex;
     height: 200px;
     flex-flow: column wrap;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .item-2{
-    height: 270px;
-    width: 390px;
-    background: white;
-    padding: 15px;
-}
-
-.item-3{
     height: 130px;
     width: 670px;
-    background: white;
+    background: $White;
     padding: 15px;
 }
 
 #machine{
     margin-top: 35px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }

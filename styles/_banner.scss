@@ -20,6 +20,7 @@
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%, 0.25);
     border-radius: 0.5rem;
+    
 }
 
 .slider::-webkit-scrollbar{
@@ -40,17 +41,16 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: $White;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+    a:hover{
+        opacity: 1;
+    }
 }
 
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-    opacity: 1;
-}

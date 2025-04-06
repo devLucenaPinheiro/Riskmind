@@ -1,0 +1,35 @@
+.container-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    padding: 15px 6%;
+    text-align: center;
+
+}
+
+.item-3{
+    height: 270px;
+    width: 90%;
+    padding: 15px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.item-3 p{
+    font-size: 16px;
+}
+
+.container-3 .item-3{
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    padding: 30px 20px;
+    transition: 0.2s;
+}
+
+.container-3 .item-3:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.2);
+    transform: scale(1.03);
+}
