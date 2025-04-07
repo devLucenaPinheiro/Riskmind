@@ -408,6 +408,7 @@ span {
 
 .container-2 {
   display: flex;
+  max-width: 1600px;
   height: 200px;
   flex-flow: column wrap;
   align-items: center;
@@ -435,4 +436,22 @@ span {
     opacity: 1;
     scale: 1;
   }
+}
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #168ae4;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002147;
 }/*# sourceMappingURL=style.css.map */

@@ -32,6 +32,7 @@ span{
 
 .container-2{
     display: flex;
+    max-width: 1600px;
     height: 200px;
     flex-flow: column wrap;
     align-items: center;
@@ -60,3 +61,23 @@ span{
         scale: 1;
     }
 }
+
+
+::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $White;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $PrimaryLightBlue;
+    border-radius: 10px;
+    border: 2px solid $White;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: $PrimaryDarkBlue;
+  }
