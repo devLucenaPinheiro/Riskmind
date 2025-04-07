@@ -14,12 +14,14 @@
     padding: 15px;
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 
 .item-3 p{
     font-size: 16px;
 }
+
+
 
 .container-3 .item-3{
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
