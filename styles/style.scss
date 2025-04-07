@@ -28,21 +28,21 @@ span{
 }
 
 
-.container-2{
+.container-2 {
     display: flex;
-    max-width: 1600px;
-    height: 200px;
-    flex-flow: column wrap;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.item-2{
-    height: 130px;
-    width: 670px;
+.item-2 {
+    width: 100%;
+    max-width: 670px;
     background: $White;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 #machine{
