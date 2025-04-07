@@ -9,17 +9,19 @@
 </head>
 <body>
     <div class="contact-container">
-        <form action="" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
                 <h2>Entre em contato</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="80f802d3-9588-49c4-9f00-8d42609fdbe7">
             <input type="text" name="name" placeholder="Seu Nome" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Seu Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Sua Mensagem" class="contact-inputs"></textarea>
             <button type="submit">Enviar <img src="assets/arrow_icon.png" alt=""></button>
         </form>
         <div class="contact-right">
+            <img src="assets/form-right.png" alt="">
         </div>
     </div>
 </body>

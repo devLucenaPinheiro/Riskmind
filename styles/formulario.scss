@@ -65,8 +65,14 @@ body{
     padding-top: 15px;
     border-radius: 23px;
 }
+
+.contact-inputs:hover{
+    border: 3px solid #0750a3;;
+}
+
+
 .contact-inputs:focus{
-    border: 2px solid $PrimaryDarkBlue;
+    border: 3px solid $PrimaryDarkBlue;
 }
 .contact-inputs::placeholder{
     color: a9a9a9;
@@ -87,5 +93,18 @@ body{
 
 .contact-left button img{
     height: 15px;
+}
+
+.contact-right img{
+    width: 500px;
+}
+
+@media(max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
 }
 

@@ -63,8 +63,12 @@ body {
   border-radius: 23px;
 }
 
+.contact-inputs:hover {
+  border: 3px solid #0750a3;
+}
+
 .contact-inputs:focus {
-  border: 2px solid #002147;
+  border: 3px solid #002147;
 }
 
 .contact-inputs::-moz-placeholder {
@@ -90,4 +94,17 @@ body {
 
 .contact-left button img {
   height: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
 }/*# sourceMappingURL=formulario.css.map */
