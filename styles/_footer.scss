@@ -19,13 +19,7 @@
 .footer-left p {
     margin: 10px 0;
 }
-.footer-icons {
-    margin-top: 15px;
-}
-.footer-icons img {
-    width: 30px;
-    margin-right: 10px;
-}
+
 .footer-right {
     width: 30%;
     text-align: right;
@@ -40,17 +34,20 @@
         transition: color 0.5s ease-in-out;
     }
     a:hover {
-        color: #3776c2;
+        color: $PrimaryLightBlue;
     }
 }
 
 
 .footer-bottom {
+    display: flex;
+    flex-flow: row;
     background-color: $White;
-    text-align: center;
-    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 70px;
 }
 .footer-bottom a {
-    color: #3776c2;
+    color: $PrimaryLightBlue;
     text-decoration: none;
 }

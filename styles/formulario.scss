@@ -67,7 +67,7 @@ body{
 }
 
 .contact-inputs:hover{
-    border: 3px solid #0750a3;;
+    border: 2px solid #0750a3;;
 }
 
 
@@ -97,6 +97,10 @@ body{
 
 .contact-right img{
     width: 500px;
+}
+
+textarea{
+    resize: none;
 }
 
 @media(max-width:800px){

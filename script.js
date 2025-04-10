@@ -9,6 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
         const nextScrollPosition = slides[currentIndex].offsetLeft;
         slider.scrollTo({ left: nextScrollPosition, behavior: "smooth" });
     }
-
     setInterval(nextSlide, intervalTime);
 });
