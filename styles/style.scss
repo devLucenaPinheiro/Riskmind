@@ -39,14 +39,18 @@ span{
 
 .item-2 {
     width: 100%;
-    max-width: 670px;
+    max-width: 600px;
     background: $White;
     padding: 15px;
     margin-bottom: 20px;
 }
 
 #machine{
-    margin-top: 35px;
+    margin-top: 85px;
+}
+
+.item-2 p{
+    font-size: 18px;
 }
 
 @keyframes appear{

@@ -169,7 +169,7 @@ h2 {
   gap: 15px;
   width: -moz-max-content;
   width: max-content;
-  animation: scroll 19.8s linear infinite;
+  animation: scroll 24s linear infinite;
 }
 
 .img-logo img {
@@ -244,6 +244,7 @@ h2 {
   animation: appear2 5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  font-size: 17px;
 }
 .card ul {
   list-style: none;
@@ -268,7 +269,7 @@ h2 {
 @keyframes appear2 {
   from {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
@@ -343,7 +344,7 @@ h2 {
 }
 
 .item-3 {
-  height: 270px;
+  height: 220px;
   width: 90%;
   padding: 15px;
   animation: appear linear;
@@ -352,7 +353,7 @@ h2 {
 }
 
 .item-3 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container-3 .item-3 {
@@ -395,14 +396,18 @@ span {
 
 .item-2 {
   width: 100%;
-  max-width: 670px;
+  max-width: 600px;
   background: #fff;
   padding: 15px;
   margin-bottom: 20px;
 }
 
 #machine {
-  margin-top: 35px;
+  margin-top: 85px;
+}
+
+.item-2 p {
+  font-size: 18px;
 }
 
 @keyframes appear {

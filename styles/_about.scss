@@ -50,6 +50,7 @@
     animation: appear2 5s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    font-size: 17px;
     
     ul{
       list-style: none;
@@ -75,7 +76,7 @@
   @keyframes appear2{
     from{
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(100px);
     }
     to{
       opacity: 1;
