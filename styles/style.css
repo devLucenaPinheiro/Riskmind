@@ -246,6 +246,7 @@ h2 {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
   font-size: 17px;
+  overflow-x: hidden;
 }
 .card ul {
   list-style: none;
@@ -340,7 +341,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 25px;
-  padding: 15px 6%;
+  padding: 28px 6%;
   text-align: center;
 }
 
@@ -378,8 +379,8 @@ body {
   margin: 0px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  overflow-x: hidden;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 span {
@@ -438,4 +439,72 @@ span {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #002147;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  header {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-top: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .banner {
+    overflow: hidden;
+  }
+  .container-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-3 {
+    animation: none;
+    animation-timeline: none;
+    animation-range: none;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .container-2 {
+    flex-direction: column;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    animation: none;
+    animation-timeline: none;
+    animation-range: none;
+  }
+  .footer-container {
+    justify-content: center;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right {
+    display: none;
+  }
+  .footer-bottom-right {
+    display: none;
+  }
+  .footer-bottom {
+    padding: 10px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

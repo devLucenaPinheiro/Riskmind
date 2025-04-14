@@ -51,6 +51,7 @@
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     font-size: 17px;
+    overflow-x: hidden;
     
     ul{
       list-style: none;
