@@ -104,15 +104,16 @@ nav a:hover {
 }
 
 .footer-left strong {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .footer-left p {
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .footer-right {
-  width: 30%;
+  width: 25%;
   text-align: right;
   padding-right: 40px;
 }
@@ -121,7 +122,7 @@ nav a:hover {
   margin-bottom: 10px;
   color: #000;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.5s ease-in-out;
 }
 .footer-right a:hover {
@@ -146,7 +147,7 @@ nav a:hover {
   display: flex;
   flex-flow: column;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
   padding: 30px 0px;
 }
@@ -156,7 +157,7 @@ h2 {
 }
 
 .clientes {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -209,7 +210,7 @@ h2 {
 }
 
 .description {
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
   margin-bottom: 15px;
   text-align: justify;
@@ -407,7 +408,7 @@ span {
 }
 
 .item-2 p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 @keyframes appear {
