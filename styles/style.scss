@@ -112,8 +112,19 @@ span{
         align-items: flex-start;
       }
 
-      .banner{
-        overflow: hidden;
+      .slider {
+        min-height: 50vw;
+        height: auto;
+      }
+    
+      .slider img {
+        height: auto;
+      }
+    
+      .banner {
+        margin-bottom: 80px;
+        justify-content: center;
+        align-items: center;
       }
 
     .container-3{
@@ -134,6 +145,17 @@ span{
     }
     .container-2{
         flex-direction: column;
+    }
+
+    .item-2 {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+    #machine{
+        margin-top: 45px;
     }
 
     .cards-container {

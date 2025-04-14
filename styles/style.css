@@ -283,8 +283,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .slider-wrapper {
@@ -295,7 +294,9 @@ h2 {
 
 .slider {
   display: flex;
-  aspect-ratio: 16/9;
+  width: 100%;
+  min-height: 40vw;
+  max-height: 600px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -308,10 +309,12 @@ h2 {
 }
 
 .slider img {
-  flex: 1 0 100%;
-  scroll-snap-align: start;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  scroll-snap-align: start;
 }
 
 .slider-nav {
@@ -462,8 +465,17 @@ span {
     gap: 10px;
     align-items: flex-start;
   }
+  .slider {
+    min-height: 50vw;
+    height: auto;
+  }
+  .slider img {
+    height: auto;
+  }
   .banner {
-    overflow: hidden;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
   }
   .container-3 {
     display: flex;
@@ -481,6 +493,15 @@ span {
   }
   .container-2 {
     flex-direction: column;
+  }
+  .item-2 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  #machine {
+    margin-top: 45px;
   }
   .cards-container {
     flex-direction: column;
