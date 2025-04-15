@@ -86,7 +86,13 @@ span{
 
   @media screen and (max-width: 768px) {
 
+    ::-webkit-scrollbar-thumb {
+      display: none;
+    }
 
+    ::-webkit-scrollbar {
+      display: none;
+    }
     
     html, body{
         overflow-x: hidden;
@@ -101,16 +107,23 @@ span{
     
       nav {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         width: 40%;
         margin-top: 10px;
       }
-    
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-      }
+  
+
+      nav ul li {
+        display: none;
+    }
+
+    nav ul li:has(a#faleconosco) {
+        display: inline-block;
+    }
+
+    #faleconosco{
+      font-size: 13px;
+    }
 
       .slider {
         min-height: 50vw;
@@ -186,7 +199,10 @@ span{
 
       .footer-bottom{
         padding: 10px 20px;
+        justify-content: center;
       }
 
-    
+      .footer-bottom-left{
+        text-align: center;
+      }
 }
