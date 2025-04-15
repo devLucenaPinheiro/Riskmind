@@ -290,6 +290,7 @@ h2 {
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider {
@@ -298,6 +299,7 @@ h2 {
   min-height: 37vw;
   max-height: 600px;
   overflow-x: auto;
+  overflow: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
@@ -384,6 +386,11 @@ body {
   font-size: 14px;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 span {
@@ -541,5 +548,13 @@ span {
   }
   .footer-bottom-left {
     text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slider {
+    overflow: hidden;
+  }
+  .slider-wrapper {
+    overflow: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
