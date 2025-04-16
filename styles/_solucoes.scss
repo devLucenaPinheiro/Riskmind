@@ -1,8 +1,11 @@
 .container-3 {
     display: flex;
+    max-width: 1700px;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 28px 6%;
+    padding: 28px 0px;
+    margin: auto;
     text-align: center;
     gap: 25px;
 }
