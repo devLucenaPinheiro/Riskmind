@@ -138,6 +138,7 @@ span{
     }
 
     .about{
+        width: 80%;
         display: flex;
         flex-direction: column;
         padding: 0px;
@@ -164,10 +165,11 @@ span{
       }
 
       .card{
+        width: 90%;
+      }
+
+      .clientes-texto{
         width: 80%;
-        animation: none;
-        animation-timeline: none;
-        animation-range: none;
       }
 
       .footer-container{
@@ -175,6 +177,7 @@ span{
       }
       .footer-left{
         width: 100%;
+        padding-left: 20px;
       }
       .footer-right{
         display: none;
