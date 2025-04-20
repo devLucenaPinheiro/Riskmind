@@ -220,6 +220,10 @@ h2 {
   text-align: start;
 }
 
+#ariskmind {
+  scroll-margin-top: 70px;
+}
+
 .description {
   font-size: 18px;
   color: #333;
@@ -383,6 +387,10 @@ h2 {
 
 .item-3 p {
   font-size: 18px;
+}
+
+#solucoes {
+  scroll-margin-top: 70px;
 }
 
 .container-3 .item-3 {
