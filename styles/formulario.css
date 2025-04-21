@@ -13,6 +13,7 @@
 body {
   background: linear-gradient(270deg, #168ae4, #12437e);
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .contact-container {
@@ -67,6 +68,16 @@ body {
   border: 2px solid #0750a3;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .contact-inputs:focus {
   border: 3px solid #002147;
 }
@@ -104,11 +115,14 @@ textarea {
   resize: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .contact-inputs {
     width: 80vw;
   }
   .contact-right {
     display: none;
+  }
+  .logo {
+    max-width: 50%;
   }
 }/*# sourceMappingURL=formulario.css.map */
