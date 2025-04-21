@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  padding: 0px 40px;
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -39,7 +39,7 @@ nav a {
   text-decoration: none;
   color: #000;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.5s ease-in-out;
 }
 
@@ -47,12 +47,8 @@ nav a:hover {
   color: #168ae4;
 }
 
-#logo {
-  padding: 10px;
-}
-
 #faleconosco {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
@@ -545,13 +541,14 @@ span {
   }
   header {
     display: flex;
-    padding: 10px 20px;
+    padding: 20px 40px;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
   nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 40%;
     margin-top: 10px;
   }
@@ -562,7 +559,8 @@ span {
     display: inline-block;
   }
   #faleconosco {
-    font-size: 13px;
+    font-size: 16px;
+    padding: 0.5em 1em;
   }
   .slider {
     min-height: 50vw;

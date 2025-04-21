@@ -91,14 +91,16 @@ span{
 
     header {
         display: flex;
-        padding: 10px 20px;
+        padding: 20px 40px;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        
       }
     
       nav {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         width: 40%;
         margin-top: 10px;
       }
@@ -112,8 +114,9 @@ span{
         display: inline-block;
     }
 
-    #faleconosco{
-      font-size: 13px;
+    #faleconosco {
+      font-size: 16px;
+      padding: 0.5em 1em;
     }
 
       .slider {
