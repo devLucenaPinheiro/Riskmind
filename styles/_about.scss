@@ -31,7 +31,7 @@
   }
   
   .highlight-yellow {
-    color: $Yellow;
+    color: $PrimaryDarkBlue;
     font-weight: bold;
   }
   
@@ -45,7 +45,7 @@
   
   .card {
     width: 30%;
-    background: $White;
+    background: #e3effb;;
     padding: 20px;
     border: 2px solid $PrimaryLightBlue;
     border-radius: 10px;
@@ -75,7 +75,7 @@
   
     li::before {
       content: "➤";
-      color: $Yellow;
+      color: $PrimaryDarkBlue;
       position: absolute;
       left: 0;
     }

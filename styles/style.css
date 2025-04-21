@@ -139,7 +139,7 @@ nav a:hover {
 .footer-bottom {
   display: flex;
   flex-flow: row;
-  background-color: #fff;
+  background-color: #e3effb;
   align-items: center;
   justify-content: space-between;
   padding: 15px 70px;
@@ -233,7 +233,7 @@ h2 {
 }
 
 .highlight-yellow {
-  color: #f5b700;
+  color: #002147;
   font-weight: bold;
 }
 
@@ -247,7 +247,7 @@ h2 {
 
 .card {
   width: 30%;
-  background: #fff;
+  background: #e3effb;
   padding: 20px;
   border: 2px solid #168ae4;
   border-radius: 10px;
@@ -275,7 +275,7 @@ h2 {
 }
 .card li::before {
   content: "➤";
-  color: #f5b700;
+  color: #002147;
   position: absolute;
   left: 0;
 }
@@ -397,7 +397,7 @@ h2 {
 .container-3 .item-3 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  background-color: #fcfcfc;
+  background-color: #e3effb;
   padding: 30px 20px;
   transition: background-color 0.4s ease, transform 0.7s ease, opacity 0.8s ease-in-out;
 }
@@ -505,7 +505,6 @@ span {
 .item-2 {
   width: 100%;
   max-width: 600px;
-  background: #fff;
   padding: 15px;
   margin-bottom: 20px;
 }
@@ -535,6 +534,81 @@ span {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #002147;
+}
+
+.plano-de-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.plano-de-fundo div {
+  position: absolute;
+  border-radius: 50%;
+  animation: gradient 4s infinite;
+}
+
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+.plano-de-fundo div:nth-child(1) {
+  width: 90%;
+  height: 80%;
+  background-color: #C5F1FA;
+  left: -29%;
+  top: -10%;
+}
+
+.plano-de-fundo div:nth-child(2) {
+  width: 80%;
+  height: 70%;
+  background-color: #C5E1FA;
+  top: -12%;
+  right: -12%;
+  animation-delay: 8s;
+}
+
+.plano-de-fundo div:nth-child(3) {
+  width: 65%;
+  height: 80%;
+  background-color: #C5D0FA;
+  bottom: -15%;
+  right: -20%;
+  animation-delay: 0.3s;
+}
+
+.plano-de-fundo div:nth-child(4) {
+  width: 80%;
+  height: 25%;
+  background-color: #B5DFFA;
+  bottom: -6%;
+  left: -18%;
+  animation-delay: 1.2s;
+}
+
+.plano-de-fundo div:nth-child(5) {
+  width: 80%;
+  height: 30%;
+  background-color: #A9D3FA;
+  bottom: 8%;
+  left: 1%;
+  animation-delay: 1s;
+}
+
+.plano-de-fundo::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
 }
 
 @media screen and (max-width: 768px) {
