@@ -12,6 +12,19 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-align: start;
+    align-items: center;
+  }
+  
+  .cursor {
+    font-weight: bold;
+    color: $PrimaryLightBlue;
+    animation: blink 0.8s infinite;
+    margin-left: 1px;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
 
   #ariskmind {
@@ -23,6 +36,14 @@
     color: #333;
     margin-bottom: 15px;
     text-align: justify;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .description.visible {
+    opacity: 1;
+    transform: translateX(0);
   }
   
   .highlight {

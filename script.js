@@ -28,3 +28,48 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll('.item-3, .card').forEach(el => observer.observe(el));
     }
 )
+
+document.addEventListener("DOMContentLoaded", function() {
+  const text = "A RISKMIND";
+  const target = document.getElementById("typewriter-text");
+  let i = 0;
+  let hasTyped = false;
+
+  function type() {
+    if (i < text.length) {
+      target.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 120);
+    }
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasTyped) {
+        hasTyped = true;
+        type();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.9
+  });
+
+  observer.observe(document.querySelector('.title'));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const paragraphs = document.querySelectorAll('.description');
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.6
+  });
+
+  paragraphs.forEach(p => fadeObserver.observe(p));
+});
