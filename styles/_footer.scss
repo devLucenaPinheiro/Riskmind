@@ -1,5 +1,6 @@
 .footer-container {
     background-color: #e3effb;
+    opacity: 0.7;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,6 @@
 .footer-bottom {
     display: flex;
     flex-flow: row;
-    background-color: #e3effb;
     align-items: center;
     justify-content: space-between;
     padding: 15px 70px;
