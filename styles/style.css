@@ -513,10 +513,11 @@ html, body {
 
 .container-2 {
   display: flex;
-  max-width: 1720px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  max-width: 1700px;
   margin: auto;
   box-sizing: border-box;
 }
