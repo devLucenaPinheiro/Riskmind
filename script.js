@@ -73,3 +73,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
   paragraphs.forEach(p => fadeObserver.observe(p));
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const navList = document.getElementById('nav-list');
+const menuOverlay = document.getElementById('menu-overlay');
+
+function closeMenu() {
+  menuToggle.classList.remove('active');
+
+  navList.classList.add('menu-fade-slide-out');
+  menuOverlay.classList.add('overlay-fade-out');
+
+  setTimeout(() => {
+    navList.classList.remove('show', 'menu-fade-slide-out');
+    menuOverlay.classList.remove('show', 'overlay-fade-out');
+  }, 400);
+}
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navList.classList.contains('show');
+  if (isOpen) {
+    closeMenu();
+  } else {
+    navList.classList.add('show');
+    menuToggle.classList.add('active');
+    menuOverlay.classList.add('show');
+  }
+});
+
+menuOverlay.addEventListener('click', () => {
+  closeMenu();
+});
+
+const navLinks = document.querySelectorAll('#nav-list a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});

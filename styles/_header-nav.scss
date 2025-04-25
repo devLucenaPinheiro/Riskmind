@@ -92,3 +92,165 @@ nav a:hover {
 #faleconosco:active{
     transform: scale(0.95);
 }
+
+#menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+#menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #168ae4;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+      display: flex;
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      z-index: 300;
+  
+      &.active span {
+        background: #168ae4;
+      }
+    }
+  
+    #nav-list {
+      display: none;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 65%;
+      height: 100vh;
+      background: #ffffff;
+      padding: 20px;
+      border-left: 2px solid #168ae4;
+      box-shadow: -8px 0px 16px rgba(0, 0, 0, 0.3);
+      animation: slideFromRight 0.4s ease forwards;
+      z-index: 200;
+  
+      &.show {
+        display: flex;
+      }
+  
+      &.menu-fade-slide-out {
+        animation: menuFadeSlideOut 0.4s forwards;
+      }
+    }
+  
+    #menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+      
+        &.show {
+          display: block;
+        }
+      
+        &.overlay-fade-out {
+          animation: overlayFadeOut 0.3s forwards;
+        }
+      }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+  
+      a {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: block;
+        padding: 10px 0;
+  
+        &:hover {
+          color: #168ae4;
+        }
+      }
+    }
+  
+    #faleconosco {
+      background-color: #168ae4;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 12px;
+      border-radius: 5px;
+      width: 80%;
+      margin: 20px auto 0 auto;
+      text-align: center;
+      box-shadow: none;
+      display: block;
+  
+      &:hover {
+        background-color: #126bb5;
+      }
+    }
+  
+    @keyframes slideFromRight {
+      0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes menuFadeSlideOut {
+      0% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+    }
+  
+    
+    @keyframes overlayFadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  

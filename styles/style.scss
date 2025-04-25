@@ -102,15 +102,6 @@ html, body {
         width: 40%;
         margin-top: 10px;
       }
-  
-
-      nav ul li {
-        display: none;
-    }
-
-    nav ul li:has(a#faleconosco) {
-        display: inline-block;
-    }
 
     #faleconosco {
       font-size: 16px;
