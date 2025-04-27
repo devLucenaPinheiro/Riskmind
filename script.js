@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll('.item-3');
   
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -110,5 +109,20 @@ const navLinks = document.querySelectorAll('#nav-list a');
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     closeMenu();
+  });
+});
+
+const slider = document.querySelector('.slider');
+const botoes = document.querySelectorAll('.slider-nav a');
+
+botoes.forEach((botao, index) => {
+  botao.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const larguraSlide = slider.offsetWidth;
+    slider.scrollTo({
+      left: larguraSlide * index,
+      behavior: 'smooth'
+    });
   });
 });
