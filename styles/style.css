@@ -330,7 +330,7 @@ h2 {
   gap: 15px;
   width: -moz-max-content;
   width: max-content;
-  animation: scroll 24s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
 .img-logo img {
