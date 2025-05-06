@@ -126,3 +126,12 @@ botoes.forEach((botao, index) => {
     })
   })
 })
+
+const botao = document.querySelector('.whatsapp-button')
+
+setInterval(() => {
+  botao.style.animationPlayState = 'running'
+  setTimeout(() => {
+    botao.style.animationPlayState = 'paused'
+  }, 500)
+}, 4000)
