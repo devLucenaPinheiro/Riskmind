@@ -1,0 +1,14 @@
+.texto-carrossel {
+    display: flex;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $Black;
+    text-align: start;
+    margin: auto;
+    .variavel {
+      color: $PrimaryLightBlue;
+      transition: opacity 0.5s ease;
+    }
+  }

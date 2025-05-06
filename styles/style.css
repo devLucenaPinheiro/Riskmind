@@ -648,6 +648,21 @@ h2 {
      object-fit: contain;
 }
 
+.texto-carrossel {
+  display: flex;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: start;
+  margin: auto;
+}
+.texto-carrossel .variavel {
+  color: #168ae4;
+  transition: opacity 0.5s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }

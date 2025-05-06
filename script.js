@@ -126,3 +126,19 @@ botoes.forEach((botao, index) => {
     })
   })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const palavras = ["veritatis", "temporibus", "accusamus", "quae", "odio"];
+  const span = document.querySelector('.variavel');
+  let index = 0;
+
+  setInterval(() => {
+    span.style.opacity = 0;
+
+    setTimeout(() => {
+      span.textContent = palavras[index];
+      span.style.opacity = 1;
+      index = (index + 1) % palavras.length;
+    }, 1000);
+  }, 4000);
+});
