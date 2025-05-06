@@ -248,7 +248,7 @@ nav a:hover {
   align-items: center;
   font-size: 19px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-left {
@@ -650,10 +650,10 @@ h2 {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  width: 57px;
+  height: 57px;
   background-color: #25d366;
   border-radius: 50%;
   display: flex;

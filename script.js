@@ -134,4 +134,4 @@ setInterval(() => {
   setTimeout(() => {
     botao.style.animationPlayState = 'paused'
   }, 500)
-}, 4000)
+}, 7000)
