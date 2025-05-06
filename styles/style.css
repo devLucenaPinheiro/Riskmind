@@ -292,10 +292,10 @@ nav a:hover {
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 70px;
+  padding: 5px 70px;
   font-size: 19px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-bottom a {
@@ -330,7 +330,7 @@ h2 {
   gap: 15px;
   width: -moz-max-content;
   width: max-content;
-  animation: scroll 24s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .img-logo img {
