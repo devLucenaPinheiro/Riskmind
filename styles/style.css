@@ -194,23 +194,6 @@ nav a:hover {
   nav ul li a:hover {
     color: #168ae4;
   }
-  #faleconosco {
-    background-color: #168ae4;
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 12px;
-    border-radius: 5px;
-    width: 80%;
-    margin: 20px auto 0 auto;
-    text-align: center;
-    box-shadow: none;
-    display: block;
-  }
-  #faleconosco:hover {
-    background-color: #126bb5;
-  }
   @keyframes slideFromRight {
     0% {
       opacity: 0;
@@ -409,8 +392,8 @@ h2 {
   font-weight: bold;
 }
 
-.highlight-yellow {
-  color: #f5b700;
+.highlight-darkblue {
+  color: #022955;
   font-weight: bold;
 }
 
@@ -452,7 +435,7 @@ h2 {
 }
 .card li::before {
   content: "➤";
-  color: #f5b700;
+  color: #022955;
   position: absolute;
   left: 0;
 }
@@ -753,7 +736,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #002147;
+  background: #022955;
 }
 
 @media screen and (max-width: 768px) {
