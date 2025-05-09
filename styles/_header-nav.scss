@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    color: $PrimaryLightBlue;
+    color: $PrimaryLightBlue !important; 
 }
 
 header.header-scroll .logo-white {
@@ -53,7 +53,7 @@ header.header-scroll .logo-black {
 
 .header-top {
   background: transparent;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   transition: all 0.3s ease;
 }
 
@@ -154,7 +154,7 @@ header.header-scroll .logo-black {
 }
 
 #faleconosco:hover, #faleconosco:focus{
-    color: $White;
+    color: $White !important;
 }
 
 #faleconosco:hover:before, #faleconosco:focus:before{

@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("scroll", function () {
     const header = document.querySelector("header")
-    if (window.scrollY > 50) {
+    if (window.scrollY > 30) {
       header.classList.add("header-scroll")
       header.classList.remove("header-top")
     } else {

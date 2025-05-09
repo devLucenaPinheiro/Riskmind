@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #168ae4;
+  color: #168ae4 !important;
 }
 
 header.header-scroll .logo-white {
@@ -54,7 +54,7 @@ header.header-scroll .logo-black {
 
 .header-top {
   background: transparent;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   transition: all 0.3s ease;
 }
 
@@ -155,7 +155,7 @@ header.header-scroll .logo-black {
 }
 
 #faleconosco:hover, #faleconosco:focus {
-  color: #fff;
+  color: #fff !important;
 }
 
 #faleconosco:hover:before, #faleconosco:focus:before {
