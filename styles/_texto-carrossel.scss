@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    color: $Black;
+    color: $White;
     text-align: start;
     margin: auto;
     .variavel {
@@ -15,10 +15,10 @@
 
   .carrossel-text-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 9;
   text-align: center;
   color: white;
 }

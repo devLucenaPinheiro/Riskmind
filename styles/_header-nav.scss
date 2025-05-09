@@ -43,14 +43,6 @@ nav a:hover {
     color: $PrimaryLightBlue;
 }
 
-.logo-white {
-  display: block;
-}
-
-.logo-black {
-  display: none;
-}
-
 header.header-scroll .logo-white {
   display: none;
 }
@@ -61,24 +53,69 @@ header.header-scroll .logo-black {
 
 .header-top {
   background: transparent;
-  color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   transition: all 0.3s ease;
 }
 
-.header-top .logo-white {
-  display: block;
+
+.logo-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.header-top .logo-black {
-  display: none;
+
+.logo-container .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 
-/* Estilo do header após o scroll */
+.header-top nav a{
+  color: white !important;
+}
+
+.logo-black {
+  opacity: 0;
+}
+
+.logo-white {
+  opacity: 1;
+}
+
+.header-scroll .logo-black {
+  opacity: 1;
+}
+
+.header-scroll .logo-white {
+  opacity: 0;
+}
+
 .header-scroll {
   background: white;
-  color: black;
   border-bottom: 1px solid #ddd;
+}
+
+.header-scroll .nav-list-text {
+  color: black !important;
+}
+
+.header-top .logo-white {
+  opacity: 1;
+}
+
+.header-scroll .logo-black {
+  opacity: 1;
+}
+
+.header-scroll {
+  background: white;
+  border-bottom: 1px solid black;
+  box-shadow: 0 7px 10px rgba(0,0,0,.12);
   transition: all 0.3s ease;
 }
 

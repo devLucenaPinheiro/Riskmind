@@ -101,7 +101,7 @@ navLinks.forEach(link => {
 document.addEventListener('DOMContentLoaded', () => {
   const palavras = ["veritatis", "temporibus", "accusamus", "quae", "odio"]
   const span = document.querySelector('.variavel')
-  let index = 0;
+  let index = 0
 
   setInterval(() => {
     span.style.opacity = 0
