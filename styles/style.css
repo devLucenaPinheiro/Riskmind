@@ -60,7 +60,10 @@ header.header-scroll .logo-black {
 
 .logo-container {
   position: relative;
-  overflow: hidden;
+  width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-container .logo {
@@ -73,10 +76,11 @@ header.header-scroll .logo-black {
      object-fit: contain;
   transition: opacity 0.3s ease;
   opacity: 0;
+  pointer-events: none;
 }
 
 .header-top nav a {
-  color: white !important;
+  color: #fff;
 }
 
 .logo-black {
@@ -117,14 +121,6 @@ header.header-scroll .logo-black {
   border-bottom: 1px solid black;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
-}
-
-.header-scroll .logo-white {
-  display: none;
-}
-
-.header-scroll .logo-black {
-  display: block;
 }
 
 #faleconosco {
@@ -215,6 +211,9 @@ header.header-scroll .logo-black {
   }
   #menu-toggle.active span {
     background: #168ae4;
+  }
+  .header-top nav a {
+    color: #000;
   }
   #nav-list {
     display: none;
@@ -684,7 +683,7 @@ h2 {
   top: 40%;
   left: 25%;
   transform: translate(-50%, -50%);
-  z-index: 9;
+  z-index: 0;
   text-align: center;
   color: white;
 }
