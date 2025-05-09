@@ -43,7 +43,52 @@ nav a:hover {
     color: $PrimaryLightBlue;
 }
 
+.logo-white {
+  display: block;
+}
 
+.logo-black {
+  display: none;
+}
+
+header.header-scroll .logo-white {
+  display: none;
+}
+
+header.header-scroll .logo-black {
+  display: block;
+}
+
+.header-top {
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.header-top .logo-white {
+  display: block;
+}
+
+.header-top .logo-black {
+  display: none;
+}
+
+/* Estilo do header após o scroll */
+.header-scroll {
+  background: white;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.header-scroll .logo-white {
+  display: none;
+}
+
+.header-scroll .logo-black {
+  display: block;
+}
 
 #faleconosco{
     font-size: 18px;

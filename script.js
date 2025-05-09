@@ -99,17 +99,28 @@ navLinks.forEach(link => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-  const palavras = ["veritatis", "temporibus", "accusamus", "quae", "odio"];
-  const span = document.querySelector('.variavel');
+  const palavras = ["veritatis", "temporibus", "accusamus", "quae", "odio"]
+  const span = document.querySelector('.variavel')
   let index = 0;
 
   setInterval(() => {
-    span.style.opacity = 0;
+    span.style.opacity = 0
 
     setTimeout(() => {
-      span.textContent = palavras[index];
-      span.style.opacity = 1;
-      index = (index + 1) % palavras.length;
-    }, 1000);
-  }, 4000);
-});
+      span.textContent = palavras[index]
+      span.style.opacity = 1
+      index = (index + 1) % palavras.length
+    }, 1000)
+  }, 4000)
+})
+
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header")
+    if (window.scrollY > 50) {
+      header.classList.add("header-scroll")
+      header.classList.remove("header-top")
+    } else {
+      header.classList.add("header-top")
+      header.classList.remove("header-scroll")
+    }
+  })
