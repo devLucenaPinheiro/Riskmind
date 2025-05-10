@@ -99,7 +99,7 @@ navLinks.forEach(link => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-  const palavras = ["veritatis", "temporibus", "accusamus", "quae", "odio"]
+  const palavras = ["análises", "expertise", "métricas", "números", "segurança", "dados"]
   const span = document.querySelector('.variavel')
   let index = 0
 

@@ -3,20 +3,20 @@
     max-width: 400px;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $White;
     text-align: start;
     margin: auto;
     .variavel {
-      color: $PrimaryLightBlue;
+      color: #012c85;
       transition: opacity 0.5s ease;
     }
   }
 
   .carrossel-text-container {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 37%;
+  left: 33%;
   transform: translate(-50%, -50%);
   z-index: 0;
   text-align: center;

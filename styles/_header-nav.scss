@@ -43,13 +43,7 @@ nav a:hover {
     color: $PrimaryLightBlue !important; 
 }
 
-header.header-scroll .logo-white {
-  display: none;
-}
 
-header.header-scroll .logo-black {
-  display: block;
-}
 
 .header-top {
   background: transparent;
@@ -111,9 +105,6 @@ header.header-scroll .logo-black {
   opacity: 1;
 }
 
-.header-scroll .logo-black {
-  opacity: 1;
-}
 
 .header-scroll {
   background: white;
@@ -207,9 +198,10 @@ header.header-scroll .logo-black {
       top: 25px;
       right: 25px;
       z-index: 300;
+      margin-top: 10px;
   
       &.active span {
-        background: #168ae4;
+        background: $PrimaryLightBlue;
       }
     }
     

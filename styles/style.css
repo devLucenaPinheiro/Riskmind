@@ -44,14 +44,6 @@ nav a:hover {
   color: #168ae4 !important;
 }
 
-header.header-scroll .logo-white {
-  display: none;
-}
-
-header.header-scroll .logo-black {
-  display: block;
-}
-
 .header-top {
   background: transparent;
   border-bottom: 1px solid white;
@@ -109,10 +101,6 @@ header.header-scroll .logo-black {
 }
 
 .header-top .logo-white {
-  opacity: 1;
-}
-
-.header-scroll .logo-black {
   opacity: 1;
 }
 
@@ -208,6 +196,7 @@ header.header-scroll .logo-black {
     top: 25px;
     right: 25px;
     z-index: 300;
+    margin-top: 10px;
   }
   #menu-toggle.active span {
     background: #168ae4;
@@ -668,20 +657,20 @@ h2 {
   max-width: 400px;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
   text-align: start;
   margin: auto;
 }
 .texto-carrossel .variavel {
-  color: #168ae4;
+  color: #012c85;
   transition: opacity 0.5s ease;
 }
 
 .carrossel-text-container {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 37%;
+  left: 33%;
   transform: translate(-50%, -50%);
   z-index: 0;
   text-align: center;
