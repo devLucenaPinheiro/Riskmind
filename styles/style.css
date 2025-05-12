@@ -530,6 +530,15 @@ h2 {
   transform: translateX(0);
 }
 
+img.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 830px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container-3 {
   display: flex;
   max-width: 1700px;
