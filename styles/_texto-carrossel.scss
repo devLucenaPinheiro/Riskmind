@@ -30,9 +30,12 @@
 
 @media screen and (max-width: 480px) {
     .carrossel-text-container {
-        max-width: 260px;
-    }
+    top: 35%;
+    max-width: 300px;
+    width: 80%;
+    margin-left: 30px;
+}
     .texto-carrossel p {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }

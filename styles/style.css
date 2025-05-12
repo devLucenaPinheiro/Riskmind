@@ -45,8 +45,10 @@ nav a:hover {
 }
 
 .header-top {
-  background: transparent;
-  border-bottom: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -527,6 +529,11 @@ h2 {
      object-fit: cover;
 }
 
+@media screen and (max-width: 480px) {
+  .banner img {
+    height: 95%;
+  }
+}
 .container-3 {
   display: flex;
   max-width: 1700px;
@@ -680,10 +687,13 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .carrossel-text-container {
-    max-width: 260px;
+    top: 35%;
+    max-width: 300px;
+    width: 80%;
+    margin-left: 30px;
   }
   .texto-carrossel p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 .whatsapp-button {
