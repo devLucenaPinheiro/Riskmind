@@ -1,13 +1,11 @@
 header {
-    padding: 20px 40px 0px 40px;
+    padding: 15px 40px 15px 40px;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.15);
     z-index: 10;
-    backdrop-filter: blur(5px);
     box-sizing: border-box;
 }
 
@@ -42,10 +40,78 @@ nav a {
 }
 
 nav a:hover {
-    color: $PrimaryLightBlue;
+    color: $PrimaryLightBlue !important; 
 }
 
 
+
+.header-top {
+  background: transparent;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+
+.logo-container {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header-top nav a{
+  color: $White;
+}
+
+.logo-black {
+  opacity: 0;
+}
+
+.logo-white {
+  opacity: 1;
+}
+
+.header-scroll .logo-black {
+  opacity: 1;
+}
+
+.header-scroll .logo-white {
+  opacity: 0;
+}
+
+.header-scroll {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-scroll .nav-list-text {
+  color: black !important;
+}
+
+.header-top .logo-white {
+  opacity: 1;
+}
+
+
+.header-scroll {
+  background: white;
+  border-bottom: 1px solid black;
+  box-shadow: 0 7px 10px rgba(0,0,0,.12);
+  transition: all 0.3s ease;
+}
 
 #faleconosco{
     font-size: 18px;
@@ -79,7 +145,7 @@ nav a:hover {
 }
 
 #faleconosco:hover, #faleconosco:focus{
-    color: $White;
+    color: $White !important;
 }
 
 #faleconosco:hover:before, #faleconosco:focus:before{
@@ -132,12 +198,18 @@ nav a:hover {
       top: 25px;
       right: 25px;
       z-index: 300;
+      margin-top: 10px;
   
       &.active span {
-        background: #168ae4;
+        background: $PrimaryLightBlue;
       }
     }
-  
+    
+
+    .header-top nav a{
+    color: $Black;
+  }
+
     #nav-list {
       display: none;
       flex-direction: column;

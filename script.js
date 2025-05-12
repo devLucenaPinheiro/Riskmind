@@ -1,17 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.querySelector(".slider")
-    const slides = document.querySelectorAll(".slider img")
-    let currentIndex = 0
-    const intervalTime = 5000
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length
-        const nextScrollPosition = slides[currentIndex].offsetLeft
-        slider.scrollTo({ left: nextScrollPosition, behavior: "smooth" })
-    }
-    setInterval(nextSlide, intervalTime)
-})
-
 document.addEventListener("DOMContentLoaded", function() {
   
     const observer = new IntersectionObserver((entries) => {
@@ -112,20 +98,32 @@ navLinks.forEach(link => {
   })
 })
 
-const slider = document.querySelector('.slider')
-const botoes = document.querySelectorAll('.slider-nav a')
+document.addEventListener('DOMContentLoaded', () => {
+  const palavras = ["análises", "expertise", "métricas", "números", "segurança", "dados"]
+  const span = document.querySelector('.variavel')
+  let index = 0
 
-botoes.forEach((botao, index) => {
-  botao.addEventListener('click', (e) => {
-    e.preventDefault()
+  setInterval(() => {
+    span.style.opacity = 0
 
-    const larguraSlide = slider.offsetWidth
-    slider.scrollTo({
-      left: larguraSlide * index,
-      behavior: 'smooth'
-    })
-  })
+    setTimeout(() => {
+      span.textContent = palavras[index]
+      span.style.opacity = 1
+      index = (index + 1) % palavras.length
+    }, 1000)
+  }, 4000)
 })
+
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header")
+    if (window.scrollY > 30) {
+      header.classList.add("header-scroll")
+      header.classList.remove("header-top")
+    } else {
+      header.classList.add("header-top")
+      header.classList.remove("header-scroll")
+    }
+  })
 
 const botao = document.querySelector('.whatsapp-button')
 

@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Logo riskmind" id="logo">
+    <header id="main-header" class="header-top">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Logo Riskmind" id="logo" class="logo logo-black">
+            <img src="assets/logo-branca.png" alt="Logo Riskmind branca" class="logo logo-white">
+        </div>
         <nav>
             <ul id="nav-list">
-                <li><a href="#solucoes">Soluções</a></li>
-                <li><a href="#ariskmind">A Riskmind</a></li>
+                <li class="nav-list-text"><a href="#solucoes">Soluções</a></li>
+                <li class="nav-list-text"><a href="#ariskmind">A Riskmind</a></li>
                 <li><a href="faleconosco-form.html" id="faleconosco" target="_blank">Fale Conosco</a></li>
             </ul>
             <div id="menu-toggle">
@@ -32,20 +35,14 @@
         <span class="notification-dot"></span>
       </a>
     <main>
-        <section class="banner">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide-1" src="assets/BANNER1.png" alt="Inove movimente e cresça">
-                    <img id="slide-2" src="assets/BANNER2.png" alt="Transforme sua empresa com dados">
-                    <img id="slide-3" src="assets/BANNER3.png" alt="Decida com informação">
-                </div>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                </div>
-            </div>
-        </section>
+<div class="banner">
+    <img src="assets/background.png" alt="Banner" style="pointer-events: none;">
+    <div class="carrossel-text-container">
+        <div class="texto-carrossel">
+            <p>Transforme a sua empresa com <br><span class="variavel">dados</span></p>
+        </div>
+    </div>
+</div>
         <div class="container-2" id="solucoes">
             <div class="item-2"><hr><h1><span style="font-size: 35px; font-weight: 300;"><strong>Serviço de </strong></span><span style="color: #168ae4; font-size: 35px; font-weight: 300;"><strong>Análises</strong></span></h1><p class="pbold">Big data ou Small data, nós usamos os dados para resolver problemas importantes.</p></div>
             <div class="item-2"><p id="machine">	
