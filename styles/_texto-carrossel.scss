@@ -27,3 +27,12 @@
         font-size: 2.19rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .carrossel-text-container {
+        max-width: 260px;
+    }
+    .texto-carrossel p {
+        font-size: 1.8rem;
+    }
+}
