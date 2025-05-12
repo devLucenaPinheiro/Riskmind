@@ -677,7 +677,7 @@ h2 {
   margin: auto;
 }
 .texto-carrossel .variavel {
-  color: #012c85;
+  color: #01256e;
   transition: opacity 0.5s ease;
 }
 
@@ -685,14 +685,14 @@ h2 {
   position: absolute;
   top: 43%;
   left: 34%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -50%);
   color: #fff;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 768px) {
   .texto-carrossel {
-    font-size: 2.1rem;
+    font-size: 2.19rem;
   }
 }
 html {
