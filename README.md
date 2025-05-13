@@ -1,6 +1,6 @@
 ### Riskmind
 
-## Table of contents
+## Conteúdo
 * [Informações gerais](#Informações-gerais)
 * [Tecnologias](#Tecnologias)
 
