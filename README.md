@@ -5,7 +5,7 @@
 * [Tecnologias](#Tecnologias)
 
 ## Informações gerais
-Este projeto consistiu no desenvolvimento de uma landing page personalizada para uma seguradora, com o objetivo de modernizar sua presença digital e aprimorar a comunicação com os clientes. A página foi projetada para ser leve, responsiva e de fácil manutenção.
+Este projeto consistiu no desenvolvimento de uma landing page para uma seguradora, com o objetivo de modernizar sua presença digital e aprimorar a comunicação com os clientes. A página foi projetada para ser leve, responsiva e de fácil manutenção.
 
 ## Tecnologias
 O projeto foi desenvolvido utilizando: <br>
