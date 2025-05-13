@@ -1,10 +1,10 @@
 ### Riskmind
 
 ## Table of contents
-* [General info](#general-info)
+* [informações gerais](#informações-gerais)
 * [Tecnologias](#Tecnologias)
 
-## General info
+## informações gerais
 Este projeto consistiu no desenvolvimento de uma landing page personalizada para uma seguradora, com o objetivo de modernizar sua presença digital e aprimorar a comunicação com os clientes. A página foi projetada para ser leve, responsiva e de fácil manutenção.
 
 ## Tecnologias
