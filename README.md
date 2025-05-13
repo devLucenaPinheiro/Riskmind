@@ -9,6 +9,7 @@ Este projeto consistiu no desenvolvimento de uma landing page personalizada para
 
 ## Tecnologias
 O projeto foi desenvolvido utilizando: <br>
+<br>
 HTML5  <img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 
 SCSS/SASS  <img align="center" alt="sass_css" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
